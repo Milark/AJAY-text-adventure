@@ -144,7 +144,7 @@ def forest():
     elif gq_3 == "n":
         DeepForest()
 
-def DeepForest():
+def deepforest():
     print ("you walk deep into the forest, deeper and deeper and deeper...")
     time.sleep(0.5)
     print ("after ours of walking you think \"i should really get some sleep\"")
@@ -192,7 +192,7 @@ def end_1():
     aorb()
 
 def aorb():
-    print ("go back:\"back\" or try again:\"again\"")
+    print ("go \"back\" or try \"again\"")
     gq_6 = input("- ")
     if gq_6 == "again":
         game_2()
@@ -280,10 +280,38 @@ def basement4():
     basement4choise()
 
 def basement4choise():
-    gq_9 = input("- ")
-    if gq_9 == "barricade door":
+    gq_10 = input("- ")
+    if gq_10 == "barricade door":
         end_3()
-        
+    elif gq_10 == "enter door":
+        basement5()
+    elif gq_10 == "use medkit":
+            
+def basement5():
+    print ("you see a ladder running up to a vault style looking door")
+    time.sleep(0.5)
+    print ("you climb the ladder and open the door")
+    time.sleep(0.5)
+    print ("you open the door and climb outside, you immediatly smell something wierd")
+    time.sleep (0.5)
+    print ("you turn around and see that the little cabin is blown up you think \"huh that man outside wasn't joking\"")
+    time.sleep(0.5)
+    print ("what should you do now?")
+    time.sleep(0.5)
+    print ("walk to the \"mountain\" after al or explore deeper into the \"forest\"")
+    basement5choise()
+    
+def basement5choise():
+    gq_11 = input("- ")
+    if gq_11 == "mountain":
+        mountain()
+    elif gq_11 == "forest":
+        deepforest()
+    else:
+        print ("invalid input...")
+        time.sleep(0.5)
+        basement5choise()
+    
 def end_3():
     time.sleep(0.5)
     print ("you slowly pick up the beams and try to put them into the hooks")
@@ -300,12 +328,198 @@ def end_3():
     time.sleep(0.5)
     aorb()
         
-    
+# a function that serves no purpose it is only called for tests DO NOT REMOVE CAN BE FITAL TO DIFFERENT BRANCHES    
 def test():
     print ("it worked")
 
-def basement5():
-    print ("WIP")
-
 if __name__ == "__main__": # Starts The Main Function
     main()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
