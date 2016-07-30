@@ -195,7 +195,7 @@ def aorb():
     print ("go back:\"back\" or try again:\"again\"")
     gq_6 = input("- ")
     if gq_6 == "again":
-        game_1()
+        game_2()
     elif gq_6 == "back":
         choose()
     else:
@@ -282,8 +282,25 @@ def basement4():
 def basement4choise():
     gq_9 = input("- ")
     if gq_9 == "barricade door":
-        test()
-
+        end_3()
+        
+def end_3():
+    time.sleep(0.5)
+    print ("you slowly pick up the beams and try to put them into the hooks")
+    time.sleep(0.5)
+    print ("right as you lift one of the beams the man kicks in the door")
+    time.sleep(0.5)
+    print ("he has a gun...")
+    time.sleep(0.5)
+    print ("you can almost see the craze in his raging eyes")
+    time.sleep(0.5)
+    print ("you already know this is the end...")
+    time.sleep(0.5)
+    print ("the man pulls the trigger and the world around you fades away, accompanied with a sharp pain in your chest")
+    time.sleep(0.5)
+    aorb()
+        
+    
 def test():
     print ("it worked")
 
