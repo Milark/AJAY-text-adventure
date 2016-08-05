@@ -36,6 +36,9 @@ def prgrm(): # a small introduction to the program
 
 def choose(): #asks the user what fuction he/she wants to use
     print ("What do you want to do? calc, game or exit")
+    choose_2()
+    
+def choose_2():    
     q_3 = input ("- ")
     if q_3 == "calc":
         calc()
@@ -43,6 +46,10 @@ def choose(): #asks the user what fuction he/she wants to use
         sys.exit
     elif q_3 == "game":
         game_1()
+    else:
+        print ("invalid input")
+        time.sleep(1)
+        choose_2()
 
 def main(): # The Main Function
     print ("Hello user welcome to \"theProgram\"")
@@ -67,11 +74,17 @@ def game_1():
     print ("welcome to \"A journey Awaits you...\"")
     time.sleep(0.75)
     print ("if you want to play press y if you want to go back type \"back\"")
+    game_1choise()
+    
     gq_1 = input("- ")
     if gq_1 == "y":
         game_2()
     elif gq_1 == "back":
         choose()
+    else:
+        print ("invalid input...")
+        time.sleep(1)
+        game_1choise()
 
 
 def game_2():
@@ -82,11 +95,18 @@ def game_2():
     print ("you wake up in the middle of an grass field, you see a forest and a mountain")
     time.sleep(1)
     print ("walk to the mountain: \"mountain\" or explore the forest:\"forest\"?")
+    game_2choise()
+    
+def game_2choise():    
     gq_2 = input("- ")
     if gq_2 == "forest":
         forest()
     elif gq_2 == "mountain":
         mountain()
+    else:
+        print ("invalid input...")
+        time.sleep(1)
+        game_2choise()
 
 def mountain():
     print ("you decided to walk to the mountain...")
@@ -94,12 +114,19 @@ def mountain():
     print ("after ours of walking you finally arrive at the mountain")
     time.sleep(1)
     print ("you see a cave entrance:\"cave\" but also a light coming from the top of the mountain:\"top\"")
+    mountainchoise()
+    
+def mountainchoise():    
     gq_4 = input("- ")
     if gq_4 == "cave":
         cave()
     elif gq_4 == "top":
-        print ("you begin your journey to the top...")
+        test()
+    else:
+        print ("invalid input...")
         time.sleep(1)
+        mountainchoise()
+        
 
 def cave():
     print ("you wander around a bit ")
@@ -138,12 +165,19 @@ def forest():
     print ("as you walk you get a feeling that your being followed...")
     time.sleep(1)
     print ("you see a little cabin in the distance is seems there's light, enter the cabin:\"y/n\"?")
+    forestchoise()
+    
+def forestchoise():    
     gq_3 = input("- ")
     if gq_3 == "y":
         cabin()
     elif gq_3 == "n":
         DeepForest()
-
+    else:
+        print ("invalid input...")
+        time.sleep(1)
+        forestchoise()
+        
 def deepforest():
     print ("you walk deep into the forest, deeper and deeper and deeper...")
     time.sleep(0.5)
@@ -213,11 +247,18 @@ def basement():
     print ("frightend to your core you realise you dont have alot of time")
     time.sleep(0.5)
     print ("scream \"help\" or try to \"crawl\" away...")
+    basementchoise()
+    
+def basementchoise():
     gq_7 = input("- ")
     if gq_7 == "help":
         basement2()
     elif gq_7 == "crawl":
         basement4()
+    else:
+        print ("invalid input...")
+        time.sleep(1)
+        basementchoise()
 
 def basement2():
     print ("the man aproaches you slowly you think he means no harm...")
@@ -271,7 +312,6 @@ def basement4():
     print ("a pile of wooden boards, they seem to fit in the hooks next to the door")
     print ("a medkit, for your broken leg")
     print ("you also see a red door")
-    print ("you have about 30 seconds before the man reaches the door...")
     print ("these are your choises:")
     print ("1. \"barricade\" the \"door\"")
     print ("2. \"enter\" the red \"door\"")
@@ -286,6 +326,13 @@ def basement4choise():
     elif gq_10 == "enter door":
         basement5()
     elif gq_10 == "use medkit":
+        test()
+    elif gq_10 == "finish man":
+        test()
+    else:
+        print ("invalid input..")
+        time.sleep(1)
+        basement4choise()
             
 def basement5():
     print ("you see a ladder running up to a vault style looking door")
@@ -328,7 +375,7 @@ def end_3():
     time.sleep(0.5)
     aorb()
         
-# a function that serves no purpose it is only called for tests DO NOT REMOVE CAN BE FITAL TO DIFFERENT BRANCHES    
+# a function that serves no purpose it is only called for tests DO NOT REMOVE CAN BE FITAL TO TEST FUNCTIONS   
 def test():
     print ("it worked")
 
