@@ -121,12 +121,15 @@ def mountainchoise():
     if gq_4 == "cave":
         cave()
     elif gq_4 == "top":
-        test()
+        mountaintop()
     else:
         print ("invalid input...")
         time.sleep(1)
         mountainchoise()
-        
+    
+def mountaintop():
+    print ("yuo begin your journey to the top...")
+    time.sleep(0.5)
 
 def cave():
     print ("you wander around a bit ")
@@ -329,11 +332,24 @@ def basement4choise():
         test()
     elif gq_10 == "finish man":
         test()
+    elif gq_10 == "secret":
+        dream_ending()
     else:
         print ("invalid input..")
         time.sleep(1)
         basement4choise()
-            
+           
+def dream_ending():
+    print ("you hear a voice calling you...")
+    time.sleep(0.5)
+    print ("you slowly open your eyes, a women looking around her 50's greets you")
+    time.sleep(0.5)
+    print ("it's your mom...")
+    time.sleep(0.5)
+    print ("you think to yourself: \"that was one hell of a dream\"")
+    time.sleep(5)
+    aorb()
+           
 def basement5():
     print ("you see a ladder running up to a vault style looking door")
     time.sleep(0.5)
