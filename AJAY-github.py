@@ -169,6 +169,14 @@ def cave_3():
     print("you look at your hand and see that you are in the corner of a room")
     time.sleep(0.5)
     print("your hands are tied together with duct tape")
+    time.sleep(0.5)
+    print("you see a man in the kitchen he's wearing jeans and a red T-shirt")
+    time.sleep(0.5)
+    print("silentyl try to \"escape\" or try to \"talk\ to the man"")
+    cave_3choise
+    
+    def cave_3choise():
+        
 
 
 def deepcave():
