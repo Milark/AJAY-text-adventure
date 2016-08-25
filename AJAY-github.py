@@ -136,9 +136,33 @@ def mountainchoise():
 
 
 def mountaintop():
-    print("yuo begin your journey to the top...")
+    print("you begin your journey to the top...")
     time.sleep(0.5)
-
+    print("as you walk a blizzard starts kicking in")
+    time.sleep(0.5)
+    print("you keep walking...")
+    time.sleep(0.5)
+    print("but after half an our the blizzard starts getting worse")
+    time.sleep(0.5)
+    print("\"keep walking\" or \"build shelter\"")
+    mountaintopchoise()
+    
+def mountaintopchoise():
+    gq_12 = input("- ")
+    if gq_12 == "keep walking":
+        mountaintop_2()
+    elif gq_12 == "build shelter":
+        mountaintop_shelter()
+    else:
+        mountaintopchoise()
+        
+def mountaintop_shelter():
+    print("you dig a tiny cave in the snow and cover it up with sticks, there are no more leaves in this altitude")
+    time.sleep(0.5)
+    print("")
+    
+def mountaintop_2        
+    print ("WIP")
 
 def cave():
     print("you wander around a bit ")
