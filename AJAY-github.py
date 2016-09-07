@@ -20,6 +20,7 @@ def calc2():
     if cq_1 == "again":
         calc()
     elif cq_1 == "back":
+        print ("Go back to calculate another day")
         choose()
     else:
         print("invalid input...")
@@ -28,8 +29,13 @@ def calc2():
 
 
 def prgrm():  # a small introduction to the program
-    print("Welcome to \"TheProgram\"")
-    time.sleep(1)
+    print("Welcome to \"AJAY\"")
+    time.sleep(0.5)
+    print ("AJAY is a little text based adventure with alot of choices")
+    time.sleep(0.5)
+    print ("i would describe is as a book where you get to decide what the main charecter does...")
+    time.sleep(0.5)
+    print ("Have fun playing!")
     choose()
 
 
@@ -145,21 +151,27 @@ def mountaintop():
     print("but after half an our the blizzard starts getting worse")
     time.sleep(0.5)
     print("\"keep walking\" or \"build shelter\"")
-    mountaintopchoise()
+    MNT_choise()
     
-def mountaintopchoise():
+def MNT_choise():
     gq_12 = input("- ")
     if gq_12 == "keep walking":
         mountaintop_2()
     elif gq_12 == "build shelter":
         mountaintop_shelter()
     else:
-        mountaintopchoise()
+        MNT_choise()
         
-def mountaintop_shelter():
-    print("you dig a tiny cave in the snow and cover it up with sticks, there are no more leaves in this altitude")
+def MNT_shelter():
+    print("you dig a tiny cave in the snow and cover it up with sticks, there are no more leaves at this altitude")
     time.sleep(0.5)
-    print("")
+    print("its getting dark outside...")
+    time.sleep(0.5)
+    print("you could try to dig a hole and make a fire or go sleep and don't waste any energy")
+    MNT_shelter_choise
+    
+def MNT_shelter_choise:
+    print ("WIP")
     
 def mountaintop_2        
     print ("WIP")
