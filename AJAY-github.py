@@ -170,10 +170,10 @@ def MNT_shelter():
     print("you could try to dig a hole and make a fire or go sleep and don't waste any energy")
     MNT_shelter_choise
     
-def MNT_shelter_choise:
+def MNT_shelter_choise():
     print ("WIP")
     
-def mountaintop_2        
+def mountaintop_2():        
     print ("WIP")
 
 def cave():
@@ -208,13 +208,13 @@ def cave_3():
     time.sleep(0.5)
     print("you see a man in the kitchen he's wearing jeans and a red T-shirt")
     time.sleep(0.5)
-    print("silentyl try to \"escape\" or try to \"talk\ to the man"")
+    print("silently try to \"escape\" or try to \"talk\" to the man")
     cave_3choise
     
-    def cave_3choise():
-        
-
-
+def cave_3choise():
+    print ("wip")
+    	
+    	
 def deepcave():
     print("WIP")
 
