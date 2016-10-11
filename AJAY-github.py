@@ -171,7 +171,7 @@ def MNT_shelter():
     MNT_shelter_choise
     
 def MNT_shelter_choise():
-    print ("WIP")
+    gq_13
     
 def mountaintop_2():        
     print ("WIP")
