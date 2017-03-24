@@ -167,12 +167,18 @@ def MNT_shelter():
     time.sleep(0.5)
     print("its getting dark outside...")
     time.sleep(0.5)
-    print("you could try to dig a hole and make a fire or go sleep and don't waste any energy")
+    print("you could try to \"dig\" a hole and make a \"fire\" or go sleep and don't waste any energy")
     MNT_shelter_choise
     
 def MNT_shelter_choise():
-    gq_13
-    
+    gq_13 = input("- ")
+    if gq_13 == "dig":
+        test()
+    elif gq_13 == "fire":
+        test()
+    else:
+        MNT_shelter_choise()
+        
 def mountaintop_2():        
     print ("WIP")
 
