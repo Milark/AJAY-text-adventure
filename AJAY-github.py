@@ -1,7 +1,5 @@
-__author__ = 'milanschouten'
-
 import time  # enabels the use of time commands
-import sys  # enables sys.exit command
+import sys  # enables system comm
 
 
 def calc():  # A simple Calculator
@@ -20,7 +18,7 @@ def calc2():
     if cq_1 == "again":
         calc()
     elif cq_1 == "back":
-        print ("Go back to calculate another day")
+        print("Go back to calculate another day")
         choose()
     else:
         print("invalid input...")
@@ -31,11 +29,11 @@ def calc2():
 def prgrm():  # a small introduction to the program
     print("Welcome to \"AJAY\"")
     time.sleep(0.5)
-    print ("AJAY is a little text based adventure with alot of choices")
+    print("AJAY is a little text based adventure with alot of choices")
     time.sleep(0.5)
-    print ("i would describe is as a book where you get to decide what the main charecter does...")
+    print("i would describe is as a book where you get to decide what the main charecter does...")
     time.sleep(0.5)
-    print ("Have fun playing!")
+    print("Have fun playing!")
     choose()
 
 
@@ -51,7 +49,7 @@ def choose_2():
     elif q_3 == "exit":
         sys.exit
     elif q_3 == "game":
-        game_1()
+        game_1choise()
     else:
         print("invalid input")
         time.sleep(1)
@@ -78,12 +76,10 @@ def main():  # The Main Function
         main()
 
 
-def game_1():
+def game_1choise():
     print("welcome to \"A journey Awaits you...\"")
     time.sleep(0.75)
-    print("if you want to play press y if you want to go back type \"back\"")
-    game_1choise()
-
+    print("if you want to play press \"y\" if you want to go back type \"back\"")
     gq_1 = input("- ")
     if gq_1 == "y":
         game_2()
@@ -107,6 +103,7 @@ def game_2():
     time.sleep(1)
     print("walk to the \"mountain\" in the distance or explore the \"forest\" nearby")
     game_2choise()
+
 
 def game_2choise():
     gq_2 = input("- ")
@@ -152,29 +149,64 @@ def mountaintop():
     time.sleep(0.5)
     print("\"keep walking\" or \"build shelter\"")
     MNT_choise()
-    
+
+
 def MNT_choise():
     gq_12 = input("- ")
     if gq_12 == "keep walking":
         mountaintop_2()
     elif gq_12 == "build shelter":
-        mountaintop_shelter()
+        MNT_shelter()
     else:
         MNT_choise()
-        
+
+
 def MNT_shelter():
     print("you dig a tiny cave in the snow and cover it up with sticks, there are no more leaves at this altitude")
     time.sleep(0.5)
     print("its getting dark outside...")
     time.sleep(0.5)
-    print("you could try to dig a hole and make a fire or go sleep and don't waste any energy")
-    MNT_shelter_choise
-    
-def MNT_shelter_choise:
-    print ("WIP")
-    
-def mountaintop_2        
-    print ("WIP")
+    print("you could try to dig a hole and make a \"fire\" or \"sleep\" and don't waste any energy")
+    MNT_shelter_choise()
+
+
+def MNT_shelter_choise():
+    question13 = input("- ")
+    if question13 == "fire":
+        MNT_fire()
+    elif question13 == "sleep":
+        MNT_sleep()
+    else:
+        MNT_shelter_choise()
+
+def MNT_sleep():
+    print("WIP")
+
+def MNT_fire():
+    print("WIP")
+
+def mountaintop_2():
+    print("You decide to continue walking")
+    time.sleep(0.5)
+    print("The blizzard keeps getting worse...")
+    print("I i.. is this how I die? you think to yourself")
+    time.sleep(0.5)
+    print("you ignore the freezing cold and keep walking nontheless")
+    end_4()
+
+
+def end_4():
+    print("...")
+    print("...")
+    print("You can't move your fingers, your head is foggy")
+    time.sleep(0.5)
+    print("everything begins to fade")
+    time.sleep(0.5)
+    print("\"If only I had built a shelter first\", you think to yourself as the sky clears")
+    time.sleep(2.5)
+    print("And you slowly die...")
+    aorb()
+
 
 def cave():
     print("you wander around a bit ")
@@ -208,12 +240,12 @@ def cave_3():
     time.sleep(0.5)
     print("you see a man in the kitchen he's wearing jeans and a red T-shirt")
     time.sleep(0.5)
-    print("silentyl try to \"escape\" or try to \"talk\ to the man"")
+    print("try to quietly \"escape\" or try to \"talk\" to the man")
     cave_3choise
-    
-    def cave_3choise():
-        
 
+
+def cave_3choise():
+    print("WIP")
 
 def deepcave():
     print("WIP")
@@ -283,7 +315,8 @@ def traporobey():
 def end_1():
     print("you decide to obey the man, you open the door")
     time.sleep(1)
-    print("you hear a loud BENG and you feel steel touching your head, but as you try to respond everything goes black...")
+    print(
+        "you hear a loud BENG and you feel steel touching your head, but as you try to respond everything goes black...")
     time.sleep(1)
     print("you hear a womens voice whispering in your ear \"Aaron, Aaron! you have to try again...\"")
     time.sleep(1)
@@ -383,6 +416,7 @@ def basement3():
     print("to your suprise somepne enters the room filled with caches")
     time.sleep(0.5)
 
+
 def basement4():
     print("you try to crawl away, but your almost certant its a losthope")
     print("until the man trips and falls, you think \"this is my chance\"")
@@ -474,11 +508,10 @@ def end_3():
     aorb()
 
 
-# a function that serves no purpose it is only called for tests DO NOT REMOVE CAN BE FITAL TO TEST FUNCTIONS
+# a function that serves no purpose it is only called for tests DO NOT REMOVE CAN BE VITAL TO TEST FUNCTIONS
 def test():
     print("it worked")
 
 
-if __name__ == "__main__":  # Starts The Main Function
-    main()
+main()
 
