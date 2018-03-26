@@ -234,18 +234,27 @@ def cave_3():
     time.sleep(0.5)
     print("its about 9AM you slowly wake up")
     time.sleep(0.5)
-    print("you look at your hand and see that you are in the corner of a room")
+    print("you look at your hand and see that you are in a log cabin")
     time.sleep(0.5)
     print("your hands are tied together with duct tape")
     time.sleep(0.5)
-    print("you see a man in the kitchen he's wearing jeans and a red T-shirt")
-    time.sleep(0.5)
-    print("try to quietly \"escape\" or try to \"talk\" to the man")
-    cave_3choise
-
-
-def cave_3choise():
-    print("WIP")
+    print("you can try to \n"escape"\n or \n"wait"\n")
+    cave_3choice()
+    
+def cave_3choice():
+    print("you can try to \n"escape"\n or \n"wait"\n")
+    gq_cave = input("- ")
+    if gq_cave == "wait":
+        forest_tied()
+    elif gq_cave == "escape":
+        cabin()
+    else:
+        print("invalid input...")
+        time.sleep(0.5)
+        cave_3choice()
+        
+def forest_ties:
+    print ("WIP")
 
 def deepcave():
     print("WIP")
